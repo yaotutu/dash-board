@@ -1,15 +1,14 @@
-import type { Config } from "tailwindcss";
-import colors from 'tailwindcss/colors';
-
+import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 const config: Config = {
-	content: [
-		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./app/**/*.{js,ts,jsx,tsx,mdx}",
-		"./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
-	],
-    theme: {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@tremor/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
     transparent: 'transparent',
     current: 'currentColor',
     extend: {
@@ -132,5 +131,5 @@ const config: Config = {
     },
   ],
   plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/forms')],
-};
-export default config;
+}
+export default config
